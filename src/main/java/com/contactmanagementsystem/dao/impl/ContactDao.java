@@ -23,7 +23,7 @@ import javax.swing.JOptionPane;
 public class ContactDao extends Dao<Contact, Long> implements IContactDao {
 
 //    "SELECT `id`, `first_name`, `last_name`, `contact_group`, `phone`, `email`,`address`, `picture` , `user_id` FROM `contact` WHERE user_id= "
-    private final String createStatement = "INSERT INTO contact (first_name,last_name,contact_group,phone,email,address,picture, user_id) values (?,?,?,?,?,?,?, ?)";
+    private final String createStatement = "INSERT INTO contact (first_name,last_name,phone,email,contact_group,address,picture, user_id) values (?,?,?,?,?,?,?, ?)";
     private final String updateStatement = "UPDATE contact SET first_name=? ,last_name=? ,contact_group=? ,phone=? ,email=? ,address=? ,picture=? ,user_id=? WHERE id=?";
     private final String deleteStatement = "DELETE FROM contact where id=?";
     private final String findAllStatement = "SELECT `id`, `first_name`, `last_name`, `contact_group`, `phone`, `email`,`address`, `picture`  FROM contact";
@@ -44,9 +44,9 @@ public class ContactDao extends Dao<Contact, Long> implements IContactDao {
         try {
             preparedStatement.setString(1, t.getFirstName());
             preparedStatement.setString(2, t.getLastName());
-            preparedStatement.setString(3, t.getContactGroup());
-            preparedStatement.setString(4, t.getPhone());
-            preparedStatement.setString(5, t.getEmail());
+            preparedStatement.setString(3, t.getPhone());
+            preparedStatement.setString(4, t.getEmail());
+            preparedStatement.setString(5, t.getContactGroup());
             preparedStatement.setString(6, t.getAddress());
             preparedStatement.setBytes(7, t.getPicture());
             preparedStatement.setInt(8, t.getUserId());

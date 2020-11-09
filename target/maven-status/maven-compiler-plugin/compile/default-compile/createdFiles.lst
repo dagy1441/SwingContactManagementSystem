@@ -10,6 +10,7 @@ com/contactmanagementsystem/views/SignUpForm$4.class
 com/contactmanagementsystem/models/Contact.class
 com/contactmanagementsystem/views/ContactForm$11.class
 com/contactmanagementsystem/views/ContactForm$1.class
+com/contactmanagementsystem/views/ContactForm$14.class
 com/contactmanagementsystem/views/ContactForm$4.class
 com/contactmanagementsystem/dao/ConnectionDao.class
 com/contactmanagementsystem/views/ContactForm$12.class
@@ -19,6 +20,7 @@ com/contactmanagementsystem/models/Group.class
 com/contactmanagementsystem/views/ContactForm$2.class
 com/contactmanagementsystem/views/SignInForm$7.class
 com/contactmanagementsystem/dao/impl/GroupDao.class
+com/contactmanagementsystem/views/ContactForm$15.class
 com/contactmanagementsystem/views/SignInForm$1.class
 com/contactmanagementsystem/views/ContactForm$8.class
 com/contactmanagementsystem/dao/IContactDao.class

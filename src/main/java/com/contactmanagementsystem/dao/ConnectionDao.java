@@ -26,7 +26,7 @@ public class ConnectionDao {
         try {
 
             this.connect = DriverManager.getConnection(url, user, pass);
-            //System.out.println("connection reussie");	
+            System.out.println("connection reussie");	
 
         } catch (SQLException e) {
             // TODO Auto-generated catch block
